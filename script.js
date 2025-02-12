@@ -1,5 +1,7 @@
 const leftButton = document.getElementById('leftButton');
 const rightButton = document.getElementById('rightButton');
+const overlay = document.getElementById('overlay');
+const closeOverlay = document.getElementById('closeOverlay');
 
 let leftButtonSize = 1; // Tamaño inicial del botón izquierdo
 let rightButtonSize = 1; // Tamaño inicial del botón derecho
@@ -27,4 +29,14 @@ rightButton.addEventListener('click', () => {
     rightButton.style.position = 'absolute'; // Cambiar a posición absoluta
     rightButton.style.left = `${randomX}px`;
     rightButton.style.top = `${randomY}px`;
+});
+
+// Mostrar la superposición cuando se presiona el botón izquierdo
+leftButton.addEventListener('click', () => {
+    overlay.style.display = 'flex'; // Mostrar la superposición
+});
+
+// Cerrar la superposición cuando se presiona el botón de cerrar
+closeOverlay.addEventListener('click', () => {
+    overlay.style.display = 'none'; // Ocultar la superposición
 });
