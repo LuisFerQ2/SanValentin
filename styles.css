@@ -11,9 +11,15 @@ body {
     text-align: center;
 }
 
+.title {
+    font-size: 36px; /* Tamaño del título (ajusta según sea necesario) */
+    color: #333; /* Color del texto del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
 .image {
-    max-width: 100%;
-    height: auto;
+    max-width: 80%; /* Ajusta el tamaño de la imagen (puedes cambiar el porcentaje) */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .buttons {
@@ -42,6 +48,7 @@ body {
 .button:hover {
     opacity: 0.8; /* Efecto de opacidad al pasar el mouse */
 }
+
 /* Estilos para la superposición */
 .overlay {
     position: fixed;
