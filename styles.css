@@ -42,3 +42,32 @@ body {
 .button:hover {
     opacity: 0.8; /* Efecto de opacidad al pasar el mouse */
 }
+/* Estilos para la superposición */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.overlay-image {
+    max-width: 80%;
+    height: auto;
+}
+
+.overlay-message {
+    font-size: 24px;
+    margin: 20px 0;
+}
