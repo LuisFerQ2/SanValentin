@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #e0f7fa; /* Color de fondo de la página */
 }
 
 .container {
@@ -26,4 +26,12 @@ body {
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.2s; /* Transición suave para el tamaño */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
 }
