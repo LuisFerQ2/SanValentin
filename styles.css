@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #e0f7fa; /* Color de fondo de la página */
+    background-color: #df99ff; /* Color de fondo de la página */
 }
 
 .container {
@@ -26,12 +26,19 @@ body {
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.2s; /* Transición suave para el tamaño */
-    background-color: #007bff; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
 }
 
+#leftButton {
+    background-color: #28a745; /* Color de fondo verde para el botón izquierdo */
+}
+
+#rightButton {
+    background-color: #dc3545; /* Color de fondo rojo para el botón derecho */
+}
+
 .button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    opacity: 0.8; /* Efecto de opacidad al pasar el mouse */
 }
