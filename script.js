@@ -1,15 +1,15 @@
 const leftButton = document.getElementById('leftButton');
 const rightButton = document.getElementById('rightButton');
 
-rightButton.addEventListener('click', () => {
-    let size = 1; // Tamaño inicial
-    const interval = setInterval(() => {
-        size += 0.1; // Aumentar el tamaño
-        leftButton.style.transform = `scale(${size})`; // Aplicar el nuevo tamaño
+let leftButtonSize = 1; // Tamaño inicial del botón izquierdo
+let rightButtonPosition = 0; // Posición inicial del botón derecho
 
-        // Detener el aumento después de alcanzar un tamaño máximo
-        if (size >= 2) {
-            clearInterval(interval);
-        }
-    }, 100); // Aumentar cada 100 ms
+rightButton.addEventListener('click', () => {
+    // Aumentar el tamaño del botón izquierdo
+    leftButtonSize += 0.1; // Aumentar el tamaño
+    leftButton.style.transform = `scale(${leftButtonSize})`; // Aplicar el nuevo tamaño
+
+    // Mover el botón derecho a una nueva posición
+    rightButtonPosition += 20; // Cambia este valor para ajustar la distancia
+    rightButton.style.transform = `translateX(${rightButtonPosition}px)`; // Mover el botón
 });
